@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-900">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="icon" href="https://github.com/jrlgaa/LMS/blob/Source-Code/Logo-removebg-preview.png?raw=true" type="image/png"/>
+  </head>
+  <body class="h-full flex items-center justify-center relative overflow-hidden">
+
+    <!-- Background Particles -->
+    <div id="particles-js" class="absolute inset-0"></div>
+
+    <!-- Card -->
+    <div class="relative bg-gray-800 p-8 rounded-2xl shadow-lg w-full max-w-sm text-center z-10">
+      <!-- Logo -->
+      <div class="flex justify-center mb-6">
+        <img src="https://github.com/jrlgaa/LMS/blob/Source-Code/Logo-removebg-preview.png?raw=true"
+          alt="School Logo" class="h-24 w-auto sm:h-28"/>
+      </div>
+
+      <!-- Title -->
+      <h2 class="font-bold text-white mb-2"
+          style="font-size: clamp(1rem, 1vw + 1rem, 1rem);">
+        Create an Account
+      </h2>
+      <p class="text-gray-400 text-sm">Sign up to get started</p>
+
+      <!-- Signup Form -->
+      <form class="mt-8 space-y-4 text-left">
+        <input type="text" placeholder="Full Name"
+          class="w-full rounded-md border border-gray-600 bg-gray-100 px-3 py-2 text-sm text-gray-900 
+                 placeholder-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+          required />
+        <input type="email" placeholder="Email address"
+          class="w-full rounded-md border border-gray-600 bg-gray-100 px-3 py-2 text-sm text-gray-900 
+                 placeholder-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+          required />
+        <input type="password" placeholder="Password"
+          class="w-full rounded-md border border-gray-600 bg-gray-100 px-3 py-2 text-sm text-gray-900 
+                 placeholder-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+          required />
+        <input type="password" placeholder="Confirm Password"
+          class="w-full rounded-md border border-gray-600 bg-gray-100 px-3 py-2 text-sm text-gray-900 
+                 placeholder-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+          required />
+
+        <!-- Button -->
+        <button type="submit"
+          class="w-full rounded-md bg-blue-600 py-2 text-sm font-semibold text-white 
+                 hover:bg-blue-500 transition duration-200 
+                 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+          Sign Up
+        </button>
+      </form>
+
+      <!-- Toggle -->
+      <p class="mt-4 text-sm text-gray-400">
+        Already have an account?
+        <a href="index.html" class="text-blue-400 hover:text-blue-300 font-medium">Log in</a>
+      </p>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
